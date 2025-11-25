@@ -64,4 +64,12 @@ const person = {
 };
 
 console.log("0번째 데이터", person["name"]);
-console.log("company", person.company);
+console.log("company", person.company); //닷 표기법 권장
+
+const messageInfo = {
+  userImage:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK0pEZas5_qRK1NAKMGO27eFR6lvJ1LyHKp6B-j9k_BBOP4I6dA2Z_LjqNWLUjnt8v9yx_-wYDdQnR5w3WjWApHFa2dzndaGjd9epxsw&s=10",
+  userName: "맛있는 쉐프",
+  message: "안녕하세요",
+  role: "assistant",
+};
