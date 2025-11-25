@@ -47,13 +47,41 @@ sayHello("후츠릿", "INTJ");
 sayHello(data, "INTJ");
 
 // return (반환)
-function sum(num1, num2) {
-  // 두개의 값을 더한값 반환
+//function sum(num1, num2) {
+// 두개의 값을 더한값 반환
 
-  return num1 + num2; //로직의 마지막 줄 작성
+//  return num1 + num2; //로직의 마지막 줄 작성
 
-  console.log("함수 종료"); //return  명령어 때문에 실행되지 출력이 되지 않음
-}
+//  console.log("함수 종료"); //return  명령어 때문에 실행되지 출력이 되지 않음
+//}
+
+//화살표 함수로 변환
+// const sum = (num1, num2) => {
+//실행할 로직
+// return num1 + num2;
+// };
+
+//화살표 함수로 변환
+//함수 정의
+//const upperString =() => {}
+const sum = (num1, num2) => num1 + num2;
+
+//미션: toUpper라는 화살표 함수 만들기
+//기능: 1. 파라미터로 받아온 문자열을 대문자로 변환
+//     2. 변환한 문자열을 반환
+//실행
+
+const upperString = (text) => {
+  //1. 파라미터로 받아온 문자열을 대문자로 변환
+  const upper = text.toUpperCase();
+  //2. 반환한 문자열을 변환
+  return upper;
+};
+
+//"chutzrit".toUpperString();
+const resultString = upperString("chutzrit");
+console.log("🚀 ~ resultString:", resultString);
+console.log("🚀 ~ resultString:", upperString("dasom"));
 
 //함수 종료
 const result = sum(22, 40);
